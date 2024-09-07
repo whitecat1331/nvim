@@ -22,8 +22,8 @@ return {
           -- quick save
           -- personal config
           ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
-          ["<C-k>"] = "zz<C-u>",
-          ["<C-j>"] = "zz<C-d>",
+          ["<C-K>"] = "zz<C-u>",
+          ["<C-J>"] = "zz<C-d>",
           ["<A-o>"] = "o<esc>",
           ["<A-O>"] = "O<esc>",
         },
@@ -31,16 +31,16 @@ return {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
           --
-          ["<C-k>"] = "zz<C-u>",
-          ["<C-j>"] = "zz<C-d>",
+          ["<C-K>"] = "zz<C-u>",
+          ["<C-J>"] = "zz<C-d>",
           ["<A-o>"] = "o<esc>",
           ["<A-O>"] = "O<esc>",
         },
         v = {
           ["S"] = { ":s///g<left><left><left>", desc = "Find and Replace" },
           ["p"] = { '"_dP', desc = "Paste and re-copy to nvim register" },
-          ["<A-k>"] = "zz<C-u>",
-          ["<A-j>"] = "zz<C-d>",
+          ["<C-K>"] = "zz<C-u>",
+          ["<C-J>"] = "zz<C-d>",
           ["<A-o>"] = "o<esc>",
           ["<A-O>"] = "O<esc>",
         },
@@ -53,8 +53,8 @@ return {
     opts = {
       mappings = {
         n = {
-          ["<C-k>"] = "zz<C-u>",
-          ["<C-j>"] = "zz<C-d>",
+          ["<C-K>"] = "zz<C-u>",
+          ["<C-J>"] = "zz<C-d>",
           -- this mapping will only be set in buffers with an LSP attached
           K = {
             function() vim.lsp.buf.hover() end,
